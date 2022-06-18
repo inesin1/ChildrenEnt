@@ -241,7 +241,7 @@ namespace WindowsFormsApp6
         {
             if (Select("users", "*", "password = '" + old + "' AND id = '" + Variables.User.ID + "'").Rows.Count == 1)
             {
-                MySqlCommand cmd = new MySqlCommand("UPDATE 'users' SET password = '" + newpass + "'WHERE ID = '" + Variables.User.ID + "'", Variables.Connection);
+                MySqlCommand cmd = new MySqlCommand("UPDATE users SET password = '" + newpass + "'WHERE ID = '" + Variables.User.ID + "'", Variables.Connection);
                 ExecuteCommand(cmd);
                 ActiveUpdater.MakeActive();
                 MessageBox.Show("Пароль успешно изменён.", "Пароль изменён", MessageBoxButtons.OK);

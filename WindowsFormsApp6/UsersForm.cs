@@ -54,7 +54,6 @@ namespace WindowsFormsApp6
             Text = selrole;
 
             dgv.Columns.Add(CreateColumn("ID"));
-            dgv.Columns.Add(CreateColumn("Роль"));
             dgv.Columns.Add(CreateColumn("Фамилия"));
             dgv.Columns.Add(CreateColumn("Имя"));
             dgv.Columns.Add(CreateColumn("Отчество"));
